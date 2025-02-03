@@ -1,0 +1,26 @@
+.sales-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #c8def3;
+  padding: 40px 10px;
+}
+
+.product-info {
+  width: 20%;
+  background: #fff;
+}
+
+.data-display {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.linechart-container {
+  background: #fff;
+}
+
+.table-container {
+  margin-top: 30px;
+  background: #fff;
+  padding: 15px;
+}
