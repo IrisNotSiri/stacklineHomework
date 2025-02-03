@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stacklineHomework/static/css/main.18b05248.css",
-    "main.js": "/stacklineHomework/static/js/main.cec4e241.js",
+    "main.js": "/stacklineHomework/static/js/main.f60f9dca.js",
     "static/media/stackline_logo.svg": "/stacklineHomework/static/media/stackline_logo.5935081bd899ecfe02395699e768f84e.svg",
     "index.html": "/stacklineHomework/index.html",
     "main.18b05248.css.map": "/stacklineHomework/static/css/main.18b05248.css.map",
-    "main.cec4e241.js.map": "/stacklineHomework/static/js/main.cec4e241.js.map"
+    "main.f60f9dca.js.map": "/stacklineHomework/static/js/main.f60f9dca.js.map"
   },
   "entrypoints": [
     "static/css/main.18b05248.css",
-    "static/js/main.cec4e241.js"
+    "static/js/main.f60f9dca.js"
   ]
 }
