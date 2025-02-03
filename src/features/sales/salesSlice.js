@@ -1,12 +1,18 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import salesData from '../../data/salesData.json';
 
 export const fetchSalesData = createAsyncThunk(
   'sales/fetchSalesData',
   async () => {
-    const response = await fetch('/salesData.json');
-    console.log({response})
-    const data = await response.json();
-    return data[0];
+    // const response = await fetch('/salesData.json');
+    // console.log({response})
+    // const data = await response.json();
+    // return data[0];
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(salesData[0]);
+      }, 500); 
+    });
   }
 );
 
