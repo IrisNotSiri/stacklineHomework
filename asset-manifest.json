@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/stacklineHomework/static/css/main.18b05248.css",
+    "main.js": "/stacklineHomework/static/js/main.fc95ecc5.js",
+    "static/media/stackline_logo.svg": "/stacklineHomework/static/media/stackline_logo.5935081bd899ecfe02395699e768f84e.svg",
+    "index.html": "/stacklineHomework/index.html",
+    "main.18b05248.css.map": "/stacklineHomework/static/css/main.18b05248.css.map",
+    "main.fc95ecc5.js.map": "/stacklineHomework/static/js/main.fc95ecc5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18b05248.css",
+    "static/js/main.fc95ecc5.js"
+  ]
+}
