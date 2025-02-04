@@ -2,7 +2,7 @@ import React from 'react';
 import { LineChart } from '@mui/x-charts/LineChart';
 
 function SalesChart({ salesData }) {
-	const monthMap = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	const monthMap = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 	const styles = {
 		chartContainerStyle: {
 			width: '100%',
@@ -14,7 +14,7 @@ function SalesChart({ salesData }) {
 
 	return (
 		<div style={styles.chartContainerStyle}>
-			<div>Retails Sales</div>
+			<div>Retail Sales</div>
 			<LineChart
 				dataset={salesData}
 				xAxis={[
@@ -23,6 +23,12 @@ function SalesChart({ salesData }) {
 						dataKey: 'weekEnding',
 						scaleType: 'point',
 						valueFormatter: (date) => monthMap[new Date(date).getUTCMonth()],
+						tickMinStep: 28,
+						tickInterval: (value, index) => {
+							const currentMonth = new Date(value).getUTCMonth();
+							const prevValue = index > 0 ? new Date(salesData[index - 1].weekEnding).getUTCMonth() : null;
+							return prevValue !== currentMonth;
+						}
 					},
 				]}
 				leftAxis={null}

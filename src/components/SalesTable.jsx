@@ -40,7 +40,7 @@ function SalesTable({ salesData }) {
 
   const getSortArrow = (key) => {
     if (sortConfig.key === key) {
-      return (<IconButton onClick={() => requestSort(key)} size="small">{sortConfig.direction === 'ascending' ? <KeyboardArrowUpIcon fontSize="small"/> : <KeyboardArrowDownIcon />}</IconButton>);
+      return (<IconButton onClick={() => requestSort(key)} size="small">{sortConfig.direction === 'ascending' ? <KeyboardArrowUpIcon fontSize="small"/> : <KeyboardArrowDownIcon fontSize="small"/>}</IconButton>);
     }
     return (<IconButton onClick={() => requestSort(key)} size="small"><KeyboardArrowUpIcon fontSize="small"/></IconButton>);
   };
