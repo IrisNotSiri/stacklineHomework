@@ -54,23 +54,28 @@ function SalesTable({ salesData }) {
     headerRow: {
       borderBottom: '1px solid #ccc',
     },
-    cellLeft: {
+    headerLeft: {
       textAlign: 'left', 
       paddingBottom: '10px',
+      paddingLeft: '15px',
+      fontSize: '12px',
     },
-    cellRight: {
+    headerRight: {
       textAlign: 'right',
       paddingBottom: '10px',
+      fontSize: '12px',
     },
     dataCellRight: {
       borderBottom: '1px solid #ccc',
-      padding: '10px 0',
+      padding: '10px 30px 10px 0px',
       textAlign: 'right',
+      fontSize: '12px',
     },
     dataCellLeft: {
       borderBottom: '1px solid #ccc',
-      padding: '10px 0',
+      padding: '10px 0px 10px 15px',
       textAlign: 'left',
+      fontSize: '12px',
     }
   }
 
@@ -78,11 +83,11 @@ function SalesTable({ salesData }) {
     <table style={styles.tableStlye}>
       <thead style={styles.headerRow}>
         <tr>
-          <th style={styles.cellLeft} >Week Ending{getSortArrow('weekEnding')}</th>
-          <th style={styles.cellRight} >Retail Sales{getSortArrow('retailSales')}</th>
-          <th style={styles.cellRight} >Wholesale Sales{getSortArrow('wholesaleSales')}</th>
-          <th style={styles.cellRight} >Units Sold{getSortArrow('unitsSold')}</th>
-          <th style={styles.cellRight} >Retailer Margin{getSortArrow('retailerMargin')}</th>
+          <th style={styles.headerLeft}>WEEK ENDING{getSortArrow('weekEnding')}</th>
+          <th style={styles.headerRight}>RETAIL SALES{getSortArrow('retailSales')}</th>
+          <th style={styles.headerRight}>WHOLESALE SALES{getSortArrow('wholesaleSales')}</th>
+          <th style={styles.headerRight}>UNITS SOLD{getSortArrow('unitsSold')}</th>
+          <th style={styles.headerRight}>RETAIL MARGIN{getSortArrow('retailerMargin')}</th>
         </tr>
       </thead>
       <tbody>

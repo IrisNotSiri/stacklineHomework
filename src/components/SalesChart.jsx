@@ -35,12 +35,14 @@ function SalesChart({ salesData }) {
 				series={[
 					{
 						id: 'Retail Sales',
+						label: 'Retail Sales',
 						dataKey: 'retailSales',
 						stack: 'total',
 						showMark: false,
 					},
 					{
 						id: 'Wholesale Sales',
+						label: 'Wholesale Sales',
 						dataKey: 'wholesaleSales',
 						stack: 'total',
 						showMark: false,
